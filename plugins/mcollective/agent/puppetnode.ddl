@@ -1,4 +1,4 @@
-metadata :name => "puppetnode",
+metadata :name => "Puppet Node",
          :description => "Run Puppet node actions",
          :author => "Raphaël Pinson <raphael.pinson@camptocamp.com>",
          :license => "ASL2.0",
