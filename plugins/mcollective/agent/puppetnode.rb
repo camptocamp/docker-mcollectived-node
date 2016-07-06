@@ -1,6 +1,6 @@
 module MCollective
   module Agent
-    class PuppetNode<RPC::Agent
+    class Puppetnode<RPC::Agent
       action "deactivate" do
         out = %x[puppet agent deactivate #{params[:node]}]
 
