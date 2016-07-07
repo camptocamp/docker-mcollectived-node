@@ -19,7 +19,7 @@ action "deactivate", :description => "Deactivate a node" do
           :optional    => false,
           :maxlength   => 150
 
-    summarize do
-        aggregate boolean_summary(:disabled, {:true => "Disabled", :false => "Not Disabled"})
-    end
+    output :out,
+           :description => "Command output",
+           :display_as  => "Command output"
 end
