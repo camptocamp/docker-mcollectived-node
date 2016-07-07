@@ -2,9 +2,13 @@ module MCollective
   module Agent
     class Puppetnode<RPC::Agent
       action "deactivate" do
-        out = %x[puppet node deactivate #{request[:node]}]
+        reply[:out] = %x[puppet node deactivate #{request[:node]}]
 
-        reply[:disabled] = out =~ /disabled/
+        if reply[:out] =~ /disabled/
+          reply[:disabled] = :true
+        else
+          reply[:disabled] = :false
+        end
       end
     end
   end
