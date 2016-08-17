@@ -23,3 +23,19 @@ action "deactivate", :description => "Deactivate a node" do
            :description => "Command output",
            :display_as  => "Command output"
 end
+
+action "clean", :description => "Clean a node" do
+    display :always
+
+    input :node,
+          :prompt      => "Node",
+          :description => "Node Name",
+          :type        => :string,
+          :validation  => '^.+$',
+          :optional    => false,
+          :maxlength   => 150
+
+    output :out,
+           :description => "Command output",
+           :display_as  => "Command output"
+end
