@@ -2,7 +2,7 @@ FROM camptocamp/mcollectived:2.9.1-1
 
 MAINTAINER raphael.pinson@camptocamp.com
 
-ENV PUPPETDB_VERSION=4.1.0-1puppetlabs1
+ENV PUPPETDB_VERSION=4.2.2-1puppetlabs1
 
 RUN apt-get update \
   && apt-get install -y --force-yes \
