@@ -1,4 +1,4 @@
-FROM camptocamp/mcollectived:2.10.2-1
+FROM camptocamp/mcollectived:2.10.2-2
 
 ENV PUPPETDB_VERSION=4.3.2-1puppetlabs1
 
